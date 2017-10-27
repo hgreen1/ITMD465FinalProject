@@ -15,7 +15,9 @@ jQuery – http://jquery.com/
 This site was developed using the Sublime Text editor on a Lenovo Thinkpad (i7 Second-Gen, 16GB RAM) running Windows 10.
 ## Special Startup instructions
 1)	In order for the data display to work, you must disable same origin security:
+
   a)	Google Chrome / Chromium
+  
     a.	Run with the --disable-web-security flag
     b.	In the windows run dialog enter:
       i.	chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
@@ -24,14 +26,18 @@ This site was developed using the Sublime Text editor on a Lenovo Thinkpad (i7 S
     d.	When running from a terminal (Mac OSX)
       i.	open -a Google\ Chrome --args --disable-web-security
   b)	Mozilla Firefox/Nightly
+  
     a.	In the address bar type “about:config” and click “I’ll be careful, I promise.”
     b.	Search for “security.fileuri.strict_origin_policy”
     c.	Double Click to change the Value to “false”
   c)	Safari
+  
     a.	No way to change the Access Control Allow Origin policy.
   d)	Internet Explorer
+  
     a.	No way to change the Access Control Allow Origin policy.
   2)	The dataset has been aggregated by me to count the amount of crimes per year. The original dataset I used is included in the zip file.
+  
   3)	Otherwise there are no special procedures to start the website.
 ## Insights and issues
 •	No matter how much I want to show/use the full dataset. I cannot because any browser I tested with crashed. It took some doing to even get the frequencies of crimes in different years.
