@@ -1,0 +1,70 @@
+/*This is for the entire page*/
+#pageInfo {
+	position: fixed;
+	bottom: 0;
+	right: 5px;
+	font-size: 50%;
+	font-weight: 120%;
+}
+
+#links {
+	position: fixed;
+	top: 5px;
+	right: 5px;
+}
+
+* {
+	font-family: sans-serif;
+	text-align: center;
+	background-color: rgb(128, 128, 128);
+}
+
+/* for the Pie Chart */
+.arc text {
+	font-size: 10px;
+	text-anchor: middle;
+}
+
+.arc path {
+	stroke: #FFFFFF;
+}
+
+/* for the Bar Graph */
+
+.axis text {
+	font-size: 10px;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: white;
+	shape-rendering: crispEdges;
+}
+
+.bar {
+	fill: blue;
+	flil-opacity: .8;
+}
+
+.x.axis path {
+	display: none;
+}
+
+label {
+	position absolute;
+	top: 10px;
+	right: 10px;
+}
+
+/* for the data table exerpt */
+
+table {
+	margin: 0px auto;
+	border: 4px solid black;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+td {
+	border: 2px solid black;
+}

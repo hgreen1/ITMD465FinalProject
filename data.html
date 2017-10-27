@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Data Excerpt</title>
+</head>
+<body>
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<h1>Data Excerpt</h1>
+<script type="text/javascript">
+	d3.text("crimes1.csv", function(data) {
+		var parsedCSV = d3.csv.parseRows(data);
+
+		var chart = d3.select("body")
+			.append("table")
+
+			.selectAll("tr")
+				.data(parsedCSV).enter()
+				.append("tr")
+
+			.selectAll("td")
+				.data(function(d) { return d; }).enter()
+				.append("td")
+				.text(function(d) { return d; });
+
+		});
+	</script>
+<p id="links"><a href="page2.html">Bar Graph</a><br /><a href="index.html">Pie Graph</a></p>
+<p id="pageInfo">Page Created for ITMD 465, Spring 2016, by Henry R Green</p>
+</body>
+</html>
